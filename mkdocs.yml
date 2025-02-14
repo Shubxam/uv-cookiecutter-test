@@ -1,0 +1,52 @@
+site_name: uv-cookiecutter-test
+repo_url: https://github.com/Shubxam/uv-cookiecutter-test
+site_url: https://Shubxam.github.io/uv-cookiecutter-test
+site_description: This is a template repository for Python projects that use uv for their dependency management.
+site_author: Shubham Soni
+edit_uri: edit/main/docs/
+repo_name: Shubxam/uv-cookiecutter-test
+copyright: Maintained by <a href="https://Shubxam.com">Shubxam</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["uv_cookiecutter_test"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Shubxam/uv-cookiecutter-test
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/uv-cookiecutter-test
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
